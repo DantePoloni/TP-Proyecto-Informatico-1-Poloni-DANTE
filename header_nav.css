@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	font-family: sans-serif;
+	color: #2750F5;
+	padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #2750F5;
+}
+
+button:active{
+	border: black solid 2px;
+}
+
+header{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	border-bottom: #2750F5 solid 4px;
+}
+
+#velezEscudo{
+	width: 70px;
+	height: 70px;
+	transition: 0.3s ease;
+}
+
+#velezEscudo:hover{
+	transform: scale(1.15, 1.15);
+}
+
+#menu{
+	position: fixed;
+	height: 100%;
+	left: -250px;
+	width: 250px;
+	top: 0px;
+	transition: 0.5s ease left;
+	background-color: #2750F5;
+	border-right: #173199 solid 3px;
+}
+
+#menu::before{
+	content: "";
+	position: absolute;
+	opacity: 0.5;
+	inset: 0;
+	background-image: url("./src/escudo.svg");
+	background-size: 245px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#menu div{
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+#menu li{
+	position: absolute;
+	left: 0;
+	list-style-type: none;
+	background-color: #173199;
+	border: #173199 solid 1px;
+	width: 90%;
+	margin-left: 10px;
+	border-radius: 10px;
+}
+
+#menu li:hover{
+	transform: scale(1.05, 1.05);
+	box-shadow: 2px 2px 3px 1px white;
+}
+
+#menu ul{
+	position: relative;
+	z-index: 2;
+}
+
+#menu p{
+	margin: 0;
+}
+
+#menu a{
+	text-decoration: none;
+	font-family: Arial;
+	color: white;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#menu.activo{
+	left: 0px;
+}
