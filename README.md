@@ -1,1 +1,1 @@
-# TP-Proyecto-Inform-tico-1-Poloni-DANTE
+# TP-Proyecto-Informatico-1-Poloni-DANTE
